@@ -25,6 +25,7 @@ export default {
             type: 'OnOff',
             section: 'settings',
             defaultValue: false,
+            bindable: true,
         },
         required: {
             label: 'Required',
@@ -72,6 +73,7 @@ export default {
             },
             section: 'settings',
             defaultValue: 'any',
+            bindable: true,
         },
         acceptCustom: {
             type: 'Text',
@@ -79,6 +81,7 @@ export default {
             section: 'settings',
             hidden: content => content.accept !== 'custom',
             defaultValue: '',
+            bindable: true,
         },
     },
 };
